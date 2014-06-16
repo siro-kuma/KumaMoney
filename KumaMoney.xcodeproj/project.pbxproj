@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8D614DA194DFFBC00EC0039 /* KumaMoney.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8D614D8194DFFBC00EC0039 /* KumaMoney.xcdatamodeld */; };
 		B8EBBD69194B5173001588A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8EBBD68194B5173001588A2 /* Foundation.framework */; };
 		B8EBBD6B194B5173001588A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8EBBD6A194B5173001588A2 /* CoreGraphics.framework */; };
 		B8EBBD6D194B5173001588A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8EBBD6C194B5173001588A2 /* UIKit.framework */; };
@@ -14,7 +15,7 @@
 		B8EBBD75194B5173001588A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8EBBD74194B5173001588A2 /* main.m */; };
 		B8EBBD79194B5173001588A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8EBBD78194B5173001588A2 /* AppDelegate.m */; };
 		B8EBBD7C194B5173001588A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8EBBD7A194B5173001588A2 /* Main.storyboard */; };
-		B8EBBD7F194B5173001588A2 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8EBBD7E194B5173001588A2 /* FirstViewController.m */; };
+		B8EBBD7F194B5173001588A2 /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8EBBD7E194B5173001588A2 /* WalletViewController.m */; };
 		B8EBBD82194B5173001588A2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8EBBD81194B5173001588A2 /* SecondViewController.m */; };
 		B8EBBD84194B5174001588A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8EBBD83194B5174001588A2 /* Images.xcassets */; };
 		B8EBBD8B194B5174001588A2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8EBBD8A194B5174001588A2 /* XCTest.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B8D614D9194DFFBC00EC0039 /* KumaMoney.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KumaMoney.xcdatamodel; sourceTree = "<group>"; };
 		B8EBBD65194B5173001588A2 /* KumaMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KumaMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8EBBD68194B5173001588A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B8EBBD6A194B5173001588A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,8 +48,8 @@
 		B8EBBD77194B5173001588A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B8EBBD78194B5173001588A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B8EBBD7B194B5173001588A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B8EBBD7D194B5173001588A2 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		B8EBBD7E194B5173001588A2 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B8EBBD7D194B5173001588A2 /* WalletViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
+		B8EBBD7E194B5173001588A2 /* WalletViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
 		B8EBBD80194B5173001588A2 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B8EBBD81194B5173001588A2 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B8EBBD83194B5174001588A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -118,12 +120,13 @@
 				B8EBBD77194B5173001588A2 /* AppDelegate.h */,
 				B8EBBD78194B5173001588A2 /* AppDelegate.m */,
 				B8EBBD7A194B5173001588A2 /* Main.storyboard */,
-				B8EBBD7D194B5173001588A2 /* FirstViewController.h */,
-				B8EBBD7E194B5173001588A2 /* FirstViewController.m */,
+				B8EBBD7D194B5173001588A2 /* WalletViewController.h */,
+				B8EBBD7E194B5173001588A2 /* WalletViewController.m */,
 				B8EBBD80194B5173001588A2 /* SecondViewController.h */,
 				B8EBBD81194B5173001588A2 /* SecondViewController.m */,
 				B8EBBD83194B5174001588A2 /* Images.xcassets */,
 				B8EBBD6F194B5173001588A2 /* Supporting Files */,
+				B8D614D8194DFFBC00EC0039 /* KumaMoney.xcdatamodeld */,
 			);
 			path = KumaMoney;
 			sourceTree = "<group>";
@@ -256,7 +259,8 @@
 			files = (
 				B8EBBD82194B5173001588A2 /* SecondViewController.m in Sources */,
 				B8EBBD79194B5173001588A2 /* AppDelegate.m in Sources */,
-				B8EBBD7F194B5173001588A2 /* FirstViewController.m in Sources */,
+				B8D614DA194DFFBC00EC0039 /* KumaMoney.xcdatamodeld in Sources */,
+				B8EBBD7F194B5173001588A2 /* WalletViewController.m in Sources */,
 				B8EBBD75194B5173001588A2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +466,7 @@
 				B8EBBD9C194B5174001588A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8EBBD9D194B5174001588A2 /* Build configuration list for PBXNativeTarget "KumaMoneyTests" */ = {
 			isa = XCConfigurationList;
@@ -470,8 +475,22 @@
 				B8EBBD9F194B5174001588A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B8D614D8194DFFBC00EC0039 /* KumaMoney.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B8D614D9194DFFBC00EC0039 /* KumaMoney.xcdatamodel */,
+			);
+			currentVersion = B8D614D9194DFFBC00EC0039 /* KumaMoney.xcdatamodel */;
+			path = KumaMoney.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B8EBBD5D194B5173001588A2 /* Project object */;
 }
