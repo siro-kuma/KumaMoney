@@ -8,17 +8,31 @@
 
 #import "WalletViewController.h"
 
+#import "BudgetDataController.h"
+
 @interface WalletViewController ()
+
+@property (nonatomic, strong) BudgetDataController * budgetDataController;
 
 @end
 
 @implementation WalletViewController
+
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    
+    self.budgetDataController = [BudgetDataController getBudgetDataController];
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    self.totalBalance.text = self.budgetDataController.totalBalance;
+    self.totalEarning.text = self.budgetDataController.totalEarning;
+    self.totalSpending.text = self.budgetDataController.totalSpending;
     
 }
 
@@ -30,19 +44,8 @@
 
 - (void)setBaseDate:(UIButton *)baseDate
 {
-    NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
-    
-    [dateFormatter setDateFormat:@"MM"];
-    int month = [[dateFormatter stringFromDate:[NSDate date]] intValue];
-    
-    [dateFormatter setDateFormat:@"dd"];
-    int date = [[dateFormatter stringFromDate:[NSDate date]] intValue];
-    
-    [dateFormatter setDateFormat:@"E"];
-    NSString * day = [dateFormatter stringFromDate:[NSDate date]];
-    
     [baseDate.titleLabel setTextAlignment:NSTextAlignmentCenter];
-    [baseDate.titleLabel setText:[NSString stringWithFormat:@"%d월 %d일 ( %@ )", month, date, day]];
+    [baseDate.titleLabel setText:self.budgetDataController.baseDateForView];
 }
 
 @end

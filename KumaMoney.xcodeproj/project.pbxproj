@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B8D614DA194DFFBC00EC0039 /* KumaMoney.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8D614D8194DFFBC00EC0039 /* KumaMoney.xcdatamodeld */; };
+		B8DAA22B1951D1BA00B40053 /* BudgetDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DAA22A1951D1BA00B40053 /* BudgetDataController.m */; };
 		B8EBBD69194B5173001588A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8EBBD68194B5173001588A2 /* Foundation.framework */; };
 		B8EBBD6B194B5173001588A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8EBBD6A194B5173001588A2 /* CoreGraphics.framework */; };
 		B8EBBD6D194B5173001588A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8EBBD6C194B5173001588A2 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		B8D614D9194DFFBC00EC0039 /* KumaMoney.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KumaMoney.xcdatamodel; sourceTree = "<group>"; };
+		B8DAA2291951D1BA00B40053 /* BudgetDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetDataController.h; sourceTree = "<group>"; };
+		B8DAA22A1951D1BA00B40053 /* BudgetDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetDataController.m; sourceTree = "<group>"; };
 		B8EBBD65194B5173001588A2 /* KumaMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KumaMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8EBBD68194B5173001588A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B8EBBD6A194B5173001588A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -127,6 +130,8 @@
 				B8EBBD83194B5174001588A2 /* Images.xcassets */,
 				B8EBBD6F194B5173001588A2 /* Supporting Files */,
 				B8D614D8194DFFBC00EC0039 /* KumaMoney.xcdatamodeld */,
+				B8DAA2291951D1BA00B40053 /* BudgetDataController.h */,
+				B8DAA22A1951D1BA00B40053 /* BudgetDataController.m */,
 			);
 			path = KumaMoney;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 				B8EBBD79194B5173001588A2 /* AppDelegate.m in Sources */,
 				B8D614DA194DFFBC00EC0039 /* KumaMoney.xcdatamodeld in Sources */,
 				B8EBBD7F194B5173001588A2 /* WalletViewController.m in Sources */,
+				B8DAA22B1951D1BA00B40053 /* BudgetDataController.m in Sources */,
 				B8EBBD75194B5173001588A2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

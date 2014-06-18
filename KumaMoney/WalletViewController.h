@@ -10,6 +10,9 @@
 
 @interface WalletViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIButton *baseDate;
+@property (weak, nonatomic) IBOutlet UIButton * baseDate;
+@property (weak, nonatomic) IBOutlet UILabel * totalBalance;
+@property (weak, nonatomic) IBOutlet UILabel * totalEarning;
+@property (weak, nonatomic) IBOutlet UILabel * totalSpending;
 
 @end
