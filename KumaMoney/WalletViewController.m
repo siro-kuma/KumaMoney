@@ -7,12 +7,13 @@
 //
 
 #import "WalletViewController.h"
-
+#import "WalletTableViewController.h"
 #import "BudgetDataController.h"
 
 @interface WalletViewController ()
 
 @property (nonatomic, strong) BudgetDataController * budgetDataController;
+@property (nonatomic, weak) WalletTableViewController * walletTableViewController;
 
 @end
 
@@ -34,6 +35,14 @@
     self.totalEarning.text = self.budgetDataController.totalEarning;
     self.totalSpending.text = self.budgetDataController.totalSpending;
     
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ( [segue.identifier isEqualToString:@"EmbedTableView"] )
+    {
+        self.walletTableViewController = segue.destinationViewController;
+    }
 }
 
 - (void)didReceiveMemoryWarning
