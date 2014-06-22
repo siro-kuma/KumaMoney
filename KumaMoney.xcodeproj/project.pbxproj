@@ -26,6 +26,8 @@
 		B8EBBD8D194B5174001588A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8EBBD6C194B5173001588A2 /* UIKit.framework */; };
 		B8EBBD95194B5174001588A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8EBBD93194B5174001588A2 /* InfoPlist.strings */; };
 		B8EBBD97194B5174001588A2 /* KumaMoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8EBBD96194B5174001588A2 /* KumaMoneyTests.m */; };
+		D9A61B7B1956085200C3A043 /* WalletEarnTitleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A61B7A1956085200C3A043 /* WalletEarnTitleTableCell.m */; };
+		D9A61B7E19560DA000C3A043 /* WalletSpendTitleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A61B7D19560DA000C3A043 /* WalletSpendTitleTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,10 @@
 		B8EBBD92194B5174001588A2 /* KumaMoneyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KumaMoneyTests-Info.plist"; sourceTree = "<group>"; };
 		B8EBBD94194B5174001588A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B8EBBD96194B5174001588A2 /* KumaMoneyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KumaMoneyTests.m; sourceTree = "<group>"; };
+		D9A61B791956085200C3A043 /* WalletEarnTitleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletEarnTitleTableCell.h; sourceTree = "<group>"; };
+		D9A61B7A1956085200C3A043 /* WalletEarnTitleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletEarnTitleTableCell.m; sourceTree = "<group>"; };
+		D9A61B7C19560DA000C3A043 /* WalletSpendTitleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletSpendTitleTableCell.h; sourceTree = "<group>"; };
+		D9A61B7D19560DA000C3A043 /* WalletSpendTitleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletSpendTitleTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,7 @@
 		B8EBBD6E194B5173001588A2 /* KumaMoney */ = {
 			isa = PBXGroup;
 			children = (
+				D9A61B781956079000C3A043 /* Wallet */,
 				B8EBBD77194B5173001588A2 /* AppDelegate.h */,
 				B8EBBD78194B5173001588A2 /* AppDelegate.m */,
 				B8EBBD7A194B5173001588A2 /* Main.storyboard */,
@@ -173,6 +180,17 @@
 				B8EBBD93194B5174001588A2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9A61B781956079000C3A043 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				D9A61B791956085200C3A043 /* WalletEarnTitleTableCell.h */,
+				D9A61B7A1956085200C3A043 /* WalletEarnTitleTableCell.m */,
+				D9A61B7C19560DA000C3A043 /* WalletSpendTitleTableCell.h */,
+				D9A61B7D19560DA000C3A043 /* WalletSpendTitleTableCell.m */,
+			);
+			name = Wallet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,8 +292,10 @@
 			files = (
 				B8EBBD82194B5173001588A2 /* SecondViewController.m in Sources */,
 				B8EBBD79194B5173001588A2 /* AppDelegate.m in Sources */,
+				D9A61B7B1956085200C3A043 /* WalletEarnTitleTableCell.m in Sources */,
 				B8D614DA194DFFBC00EC0039 /* KumaMoney.xcdatamodeld in Sources */,
 				B8EBBD7F194B5173001588A2 /* WalletViewController.m in Sources */,
+				D9A61B7E19560DA000C3A043 /* WalletSpendTitleTableCell.m in Sources */,
 				B8E130741953383400FEBA3A /* WalletTableViewCell.m in Sources */,
 				B8DAA22B1951D1BA00B40053 /* BudgetDataController.m in Sources */,
 				B8E13077195339F500FEBA3A /* WalletTableViewController.m in Sources */,

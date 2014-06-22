@@ -10,6 +10,4 @@
 
 @interface WalletTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel * WalletTitleLabel;
-
 @end

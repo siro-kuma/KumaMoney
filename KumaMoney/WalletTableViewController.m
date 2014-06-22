@@ -7,7 +7,8 @@
 //
 
 #import "WalletTableViewController.h"
-#import "WalletTableViewCell.h"
+#import "WalletEarnTitleTableCell.h"
+#import "WalletSpendTitleTableCell.h"
 
 #import "BudgetDataController.h"
 
@@ -70,7 +71,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    WalletTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"WalletCell" forIndexPath:indexPath];
+    WalletEarnTitleTableCell * cell = [tableView dequeueReusableCellWithIdentifier:@"WalletEarnTitleCell" forIndexPath:indexPath];
     
     // Configure the cell...
     
