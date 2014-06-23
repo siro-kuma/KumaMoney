@@ -7,8 +7,8 @@
 //
 
 #import "WalletTableViewController.h"
-#import "WalletEarnTitleTableCell.h"
-#import "WalletSpendTitleTableCell.h"
+#import "WalletEarnTableViewCell.h"
+#import "WalletSpendTableViewCell.h"
 
 #import "BudgetDataController.h"
 
@@ -58,7 +58,7 @@
 //#warning Potentially incomplete method implementation.
     // Return the number of sections.
     
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -66,13 +66,47 @@
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
     
-    return 1;
+    return 3;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UIView * headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 14)];
+    UILabel * headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 1, 320, 12)];
+    
+    if ( section == 0 )
+    {
+        headerLabel.text = [NSString stringWithFormat:@"수입"];
+    }
+    else
+    {
+        headerLabel.text = [NSString stringWithFormat:@"지출"];
+    }
+    
+    [headerLabel setTextColor:[UIColor whiteColor]];
+    [headerLabel setTextAlignment:NSTextAlignmentLeft];
+    [headerLabel setFont:[UIFont systemFontOfSize:12.0f]];
+    [headerLabel setBackgroundColor:[UIColor grayColor]];
+    
+    [headerView setBackgroundColor:[UIColor grayColor]];
+    [headerView addSubview:headerLabel];
+    
+    return headerView;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    WalletEarnTitleTableCell * cell = [tableView dequeueReusableCellWithIdentifier:@"WalletEarnTitleCell" forIndexPath:indexPath];
+    UITableViewCell * cell = nil;
     
+    if ( indexPath.section == 0 )
+    {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"WalletEarnCell" forIndexPath:indexPath];
+    }
+    else
+    {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"WalletSpendCell" forIndexPath:indexPath];
+    }
+
     // Configure the cell...
     
     return cell;

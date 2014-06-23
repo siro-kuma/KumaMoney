@@ -1,14 +1,14 @@
 //
-//  WalletEarnTitleTableCell.m
+//  WalletSpendTableViewCell.m
 //  KumaMoney
 //
-//  Created by kuma on 14. 6. 22..
+//  Created by 김영진 on 2014. 6. 24..
 //  Copyright (c) 2014년 kuma. All rights reserved.
 //
 
-#import "WalletEarnTitleTableCell.h"
+#import "WalletSpendTableViewCell.h"
 
-@implementation WalletEarnTitleTableCell
+@implementation WalletSpendTableViewCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
