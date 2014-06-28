@@ -2,7 +2,7 @@
 //  BudgetDataController.h
 //  KumaMoney
 //
-//  Created by 김영진 on 2014. 6. 18..
+//  Created by kuma on 2014. 6. 18..
 //  Copyright (c) 2014년 kuma. All rights reserved.
 //
 

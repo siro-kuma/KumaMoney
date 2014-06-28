@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		B82155A9195879D30095EF4F /* WalletEarnTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B82155A8195879D30095EF4F /* WalletEarnTableViewCell.m */; };
 		B82155AC195879EA0095EF4F /* WalletSpendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B82155AB195879EA0095EF4F /* WalletSpendTableViewCell.m */; };
+		B824640D1959DB4900D76862 /* WalletEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B824640C1959DB4900D76862 /* WalletEditViewController.m */; };
 		B8D614DA194DFFBC00EC0039 /* KumaMoney.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8D614D8194DFFBC00EC0039 /* KumaMoney.xcdatamodeld */; };
 		B8DAA22B1951D1BA00B40053 /* BudgetDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DAA22A1951D1BA00B40053 /* BudgetDataController.m */; };
-		B8E130741953383400FEBA3A /* WalletTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E130731953383400FEBA3A /* WalletTableViewCell.m */; };
 		B8E13077195339F500FEBA3A /* WalletTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E13076195339F500FEBA3A /* WalletTableViewController.m */; };
 		B8EBBD69194B5173001588A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8EBBD68194B5173001588A2 /* Foundation.framework */; };
 		B8EBBD6B194B5173001588A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8EBBD6A194B5173001588A2 /* CoreGraphics.framework */; };
@@ -45,11 +45,11 @@
 		B82155A8195879D30095EF4F /* WalletEarnTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletEarnTableViewCell.m; sourceTree = "<group>"; };
 		B82155AA195879EA0095EF4F /* WalletSpendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletSpendTableViewCell.h; sourceTree = "<group>"; };
 		B82155AB195879EA0095EF4F /* WalletSpendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletSpendTableViewCell.m; sourceTree = "<group>"; };
+		B824640B1959DB4900D76862 /* WalletEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletEditViewController.h; sourceTree = "<group>"; };
+		B824640C1959DB4900D76862 /* WalletEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletEditViewController.m; sourceTree = "<group>"; };
 		B8D614D9194DFFBC00EC0039 /* KumaMoney.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KumaMoney.xcdatamodel; sourceTree = "<group>"; };
 		B8DAA2291951D1BA00B40053 /* BudgetDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BudgetDataController.h; sourceTree = "<group>"; };
 		B8DAA22A1951D1BA00B40053 /* BudgetDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BudgetDataController.m; sourceTree = "<group>"; };
-		B8E130721953383400FEBA3A /* WalletTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletTableViewCell.h; sourceTree = "<group>"; };
-		B8E130731953383400FEBA3A /* WalletTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletTableViewCell.m; sourceTree = "<group>"; };
 		B8E13075195339F500FEBA3A /* WalletTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletTableViewController.h; sourceTree = "<group>"; };
 		B8E13076195339F500FEBA3A /* WalletTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletTableViewController.m; sourceTree = "<group>"; };
 		B8EBBD65194B5173001588A2 /* KumaMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KumaMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,10 +145,6 @@
 				B8D614D8194DFFBC00EC0039 /* KumaMoney.xcdatamodeld */,
 				B8DAA2291951D1BA00B40053 /* BudgetDataController.h */,
 				B8DAA22A1951D1BA00B40053 /* BudgetDataController.m */,
-				B8E130721953383400FEBA3A /* WalletTableViewCell.h */,
-				B8E130731953383400FEBA3A /* WalletTableViewCell.m */,
-				B8E13075195339F500FEBA3A /* WalletTableViewController.h */,
-				B8E13076195339F500FEBA3A /* WalletTableViewController.m */,
 			);
 			path = KumaMoney;
 			sourceTree = "<group>";
@@ -185,10 +181,14 @@
 		D9A61B781956079000C3A043 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				B8E13075195339F500FEBA3A /* WalletTableViewController.h */,
+				B8E13076195339F500FEBA3A /* WalletTableViewController.m */,
 				B82155A7195879D30095EF4F /* WalletEarnTableViewCell.h */,
 				B82155A8195879D30095EF4F /* WalletEarnTableViewCell.m */,
 				B82155AA195879EA0095EF4F /* WalletSpendTableViewCell.h */,
 				B82155AB195879EA0095EF4F /* WalletSpendTableViewCell.m */,
+				B824640B1959DB4900D76862 /* WalletEditViewController.h */,
+				B824640C1959DB4900D76862 /* WalletEditViewController.m */,
 			);
 			name = Wallet;
 			sourceTree = "<group>";
@@ -295,11 +295,11 @@
 				B8D614DA194DFFBC00EC0039 /* KumaMoney.xcdatamodeld in Sources */,
 				B8EBBD7F194B5173001588A2 /* WalletViewController.m in Sources */,
 				B82155A9195879D30095EF4F /* WalletEarnTableViewCell.m in Sources */,
-				B8E130741953383400FEBA3A /* WalletTableViewCell.m in Sources */,
 				B8DAA22B1951D1BA00B40053 /* BudgetDataController.m in Sources */,
 				B8E13077195339F500FEBA3A /* WalletTableViewController.m in Sources */,
 				B8EBBD75194B5173001588A2 /* main.m in Sources */,
 				B82155AC195879EA0095EF4F /* WalletSpendTableViewCell.m in Sources */,
+				B824640D1959DB4900D76862 /* WalletEditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

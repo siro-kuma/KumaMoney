@@ -8,6 +8,7 @@
 
 #import "WalletViewController.h"
 #import "WalletTableViewController.h"
+#import "WalletEditViewController.h"
 #import "BudgetDataController.h"
 
 @interface WalletViewController ()
@@ -55,6 +56,11 @@
 {
     [baseDate.titleLabel setTextAlignment:NSTextAlignmentCenter];
     [baseDate.titleLabel setText:self.budgetDataController.baseDateForView];
+}
+
+- (IBAction)editBudget:(id)sender
+{
+    NSLog(@"touch edit button");
 }
 
 @end
